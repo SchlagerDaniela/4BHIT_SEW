@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChatController">
+   <children>
+      <Label layoutX="172.0" layoutY="14.0" text="Magic Eight Ball" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textAreaChat" editable="false" layoutX="25.0" layoutY="89.0" prefHeight="255.0" prefWidth="548.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="89.0" />
+      <TextField fx:id="textFieldQuestion" layoutX="25.0" layoutY="354.0" prefHeight="25.0" prefWidth="502.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="73.0" />
+      <Button defaultButton="true" layoutX="538.0" layoutY="354.0" mnemonicParsing="false" onAction="#onAsk" text="Ask" AnchorPane.bottomAnchor="21.0" AnchorPane.rightAnchor="27.0" />
+   </children>
+</AnchorPane>
