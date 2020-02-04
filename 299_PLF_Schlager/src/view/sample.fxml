@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <Label layoutX="62.0" layoutY="54.0" text="Key length: " />
+      <Label layoutX="300.0" layoutY="54.0" text="Filename:" />
+      <Button fx:id="buttonChoose" layoutX="485.0" layoutY="50.0" mnemonicParsing="false" onAction="#onChoose" text="Choose" />
+      <TextField fx:id="textfieldFilename" layoutX="351.0" layoutY="50.0" prefHeight="25.0" prefWidth="130.0" />
+      <ProgressBar fx:id="progressbar" layoutX="62.0" layoutY="147.0" prefWidth="200.0" progress="0.0" />
+      <Label fx:id="labelProzent" layoutX="62.0" layoutY="118.0" />
+      <Label fx:id="labelMessage" layoutX="62.0" layoutY="175.0" />
+      <Button fx:id="buttonGenerate" layoutX="294.0" layoutY="91.0" mnemonicParsing="false" onAction="#onGenerate" prefHeight="69.0" prefWidth="261.0" text="Generate" />
+      <Spinner fx:id="lengthSpinner" layoutX="125.0" layoutY="50.0" />
+   </children>
+</AnchorPane>
